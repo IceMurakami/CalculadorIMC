@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+:root{
+    --primary-color: #051f1dff;
+    --dark-color: black;
+    --sucess-color: green;
+    --bad-color: red;
+}
+
+*{
+   box-sizing: border-box;
+   outline: 0;
+   
+}
+
+body{
+    padding:0;
+    margin:0;
+    background-color: var(--primary-color);
+    font-family: 'roboto', 'sans-serif';
+    font-size: 1.3em;
+    line-height: 1.5em;
+    color:rgba(255, 255, 255, 1);
+    
+}
+
+.container{
+    max-width: 640px;
+    margin:10% auto;
+    padding: 20px;
+    background-color: #292a2d;
+    border: 0.2px solid black;
+    border-radius: 10px;
+    
+}
+
+form input, form label, form, button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+}
+
+form input{
+    height: 50px;
+    padding: 0 20px;
+    border:solid 3px whitesmoke;
+}
+form input:focus {
+    outline: 1px solid var(--primary-color);
+}
+form button{
+    background: white;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    height: 40px;
+    cursor:pointer;
+    margin-top: 30px;
+    border: 1px solid gray
+   
+}
+
+form button:hover{
+    background-color:#7993af;
+    border: 1px solid white;
+    color:white;
+    
+    
+}
+tr td{
+
+    padding: 0 10px;
+}
+.paragrafo-resultado, .bad{
+    opacity: 0.6;
+    color: white;
+    background: var(--sucess-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+}
+
+.bad{
+   
+    background-color: var(--bad-color);
+    color: white;
+}
